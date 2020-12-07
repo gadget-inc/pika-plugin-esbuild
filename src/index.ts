@@ -39,7 +39,6 @@ export async function build({out, options, reporter}: BuilderOptions): Promise<v
   const writeToWebBundled = path.join(writeToWeb, 'index.bundled.js');
 
   await service.build({
-    strict: true,
     errorLimit: 0,
     write: true,
     entryPoints: [readFromWeb],
